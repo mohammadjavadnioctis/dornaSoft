@@ -33,6 +33,7 @@
 
 	// Fix: Flexbox min-height bug on IE.
 		if (browser.name == 'ie') {
+			console.log('hi bitch')
 
 			var flexboxFixTimeoutId;
 
