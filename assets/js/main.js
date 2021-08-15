@@ -33,7 +33,6 @@
 
 	// Fix: Flexbox min-height bug on IE.
 		if (browser.name == 'ie') {
-			console.log('hi bitch')
 
 			var flexboxFixTimeoutId;
 
@@ -397,6 +396,17 @@
 				&&	location.hash != '#')
 					$window.on('load', function() {
 						$main._show(location.hash.substr(1), true);
+						let cards = document.querySelectorAll('[data-name]')
+						cards.forEach(card => {
+							card.addEventListener('click', ()=>{
+								let link = card.dataset.link
+								window.open(link, '_blank');
+
+							})
+						})
+
+
+
 					});
 
 })(jQuery);

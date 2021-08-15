@@ -1,11 +1,9 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
-/*
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
+
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -72,6 +70,74 @@ input, select, textarea {
 	appearance: none;
 }
 
+
+
+
+
+
+
+.Mworks-wrapper{
+	width: 100%;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.card{
+	width: 100%;
+	height: 30vh;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 0;
+	margin: 2em 0;
+	border-bottom: 1px solid white;
+	cursor: pointer;
+	transition: all 0.5s;	
+}
+
+	.card:hover{
+		transform: translate(-10px,-10px);
+	}
+
+.card i{
+	width: 100%;
+    height: 100%;
+    font-size: 7rem;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	
+}
+	.Mwork-img-container{
+width: 40%;
+}
+
+.Mwork-img-container img{
+	max-width: 100%;
+}
+
+
+.work-description{
+	width: 59%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+}
+
+
+.card:nth-child(2n){
+	flex-direction: row;
+}
+
+
+
+
+
+
 /* Basic */
 
 	@-ms-viewport {
@@ -95,7 +161,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #1b1f22;
+		background: #13131f;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -534,7 +600,7 @@ input, select, textarea {
 			background: #ffffff !important;
 			border-color: #ffffff !important;
 			color: #1b1f22;
-			content: '\f00c';
+			content: '\f6ff';
 		}
 
 		input[type="checkbox"]:focus + label:before,
@@ -607,6 +673,7 @@ input, select, textarea {
 	}
 
 		.icon:before {
+			
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
 			display: inline-block;
@@ -615,7 +682,7 @@ input, select, textarea {
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
+			font-family: 'Font Awesome 5 solid';
 			font-weight: 400;
 		}
 
@@ -1659,3 +1726,13 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+
+
+
+
+
+
+
+
+
